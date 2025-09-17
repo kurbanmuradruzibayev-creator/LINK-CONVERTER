@@ -116,7 +116,6 @@ def handle_music(message):
 @bot.message_handler(func=lambda message: True)
 def handle_message(message):
     if is_valid_url(message.text):
-        # Avvalgi rejimni tekshirish uchun oddiy javob
         bot.reply_to(message, "Avval /start buyrug'ini yuboring va rejimni tanlang.")
     else:
         bot.reply_to(message, "Link yuboring yoki /start buyrug'ini ishlating.")
