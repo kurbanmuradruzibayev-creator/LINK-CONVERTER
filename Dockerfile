@@ -8,7 +8,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# FFmpeg o'rnatish (audio/video konvertatsiyasi uchun)
+# FFmpeg o'rnatish (audio konvertatsiyasi uchun)
 RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
 
 CMD ["python", "main.py"]
